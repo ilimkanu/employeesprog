@@ -1,3 +1,7 @@
+package childs;
+
+import parent.Employee;
+
 public class Developer extends Employee {
     private String ranks;
 

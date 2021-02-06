@@ -1,3 +1,7 @@
+package childs;
+
+import parent.Manager;
+
 public class Ceo extends Manager {
     private boolean hasCompanyCar;
 

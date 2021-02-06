@@ -1,3 +1,8 @@
+import childs.Ceo;
+import childs.Developer;
+import childs.Specialist;
+import parent.Manager;
+
 public class Main {
     public static void main(String[] args){
         Specialist specialistMax = new Specialist("Max", 29, 50000, 2);

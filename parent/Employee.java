@@ -1,4 +1,6 @@
-abstract class Employee {
+package parent;
+
+public abstract class Employee {
     private String fio;
     private int age;
     private int salary;
@@ -36,6 +38,6 @@ abstract class Employee {
         this.salary = salary;
     }
 
-    abstract void print();
-    abstract void goToDayOff();
+    protected abstract void print();
+    protected abstract void goToDayOff();
 }
