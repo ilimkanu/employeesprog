@@ -1,4 +1,3 @@
-
 package childs;
 
 import parent.Employee;
