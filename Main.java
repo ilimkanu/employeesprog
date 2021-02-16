@@ -57,21 +57,22 @@ public class Main {
         printDeveloperGradeSwitch(developerScott);
     }
     public static void printDeveloperGrade(Developer developer){
-        if(Developer.getGradesen()==(Ranksenum.JUNIOR)){
+        if(developer.getGradesen()==(Ranksenum.JUNIOR)){
             System.out.println("I am junior developer");
         }
-        if(Developer.getGradesen()==(Ranksenum.MIDDLE)){
+        if(developer.getGradesen()==(Ranksenum.MIDDLE)){
             System.out.println("I am middle developer");
         }
-        if(Developer.getGradesen()==(Ranksenum.SENIOR)){
+        if(developer.getGradesen()==(Ranksenum.SENIOR)){
             System.out.println("I am senior developer");
         }
-        if(Developer.getGradesen()==(Ranksenum.TEAMLEAD)){
+        if(developer.getGradesen()==(Ranksenum.TEAMLEAD)){
             System.out.println("I am teamlead developer");
         }
     }
     public static void printDeveloperGradeSwitch(Developer developer){
-        switch (Developer.getGradesen()){
+        System.out.println(developer);
+        switch (developer.getGradesen()){
             case JUNIOR:
                 System.out.println("I am junior developer");
             case MIDDLE:

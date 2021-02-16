@@ -4,17 +4,17 @@ import parent.Employee;
 import parent.Ranksenum;
 
 public class Developer extends Employee {
-    private static Ranksenum gradesen;
+    private final Ranksenum gradesen;
     private String ranks;
 
-    public static Ranksenum getGradesen() {
+    public Ranksenum getGradesen() {
         return gradesen;
     }
 
     public Developer(String fio, int age, int salary, String ranks, Ranksenum gradesen) {
         super(fio, age, salary);
         this.ranks = ranks;
-        Developer.gradesen = gradesen;
+        this.gradesen = gradesen;
     }
 
     public String getRanks() {
@@ -36,5 +36,12 @@ public class Developer extends Employee {
 
     public void writeCode() {
         System.out.println("I am writing my algorithm!");
+    }
+
+    @Override
+    public String toString() {
+        return "Developer{" +
+                "ranks='" + ranks + '\'' +
+                '}';
     }
 }
