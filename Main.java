@@ -6,6 +6,8 @@ import parent.Ranksenum;
 
 public class Main {
     public static void main(String[] args) {
+//        Java is C++ without the guns, clubs and knives.
+//        -James Gosling
         Specialist specialistMax = new Specialist("Max", 29, 50000, 2);
         Specialist specialistBob = new Specialist("Bob", 32, 60000, 4);
         Specialist specialistBill = new Specialist("Bill", 28, 52000, 2);
